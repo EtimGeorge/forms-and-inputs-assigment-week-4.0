@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>survey Form</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1> Upskill 24 Survey Form</h1>
+  <div class="container">
+  
+    <form action="" method="post">
+  
+        <div class="labels">
+  
+          <label for="user-name">
+            Name
+          </label>
+          <br>
+          <input type="text" id="user-name" name="user-name" placeholder="Enter your name" autofocus>
+  
+        </div>
+  
+        <div class="labels">
+  
+          <label for="user-email">
+            Email
+          </label> <br>
+          <input type="email" id="user-email" name="user-email" placeholder="you@Example.com" >
+  
+        </div>
+  
+        <div class="labels">
+          <label for="user-age">
+            Age
+          </label> <br>
+          <input type="number" id="user-age" name="user-age" placeholder="Enter your Age">
+        </div>
+  
+        <div class="labels">
+          <label for="user-occupation">Which best describes you?</label><br>
+          <div>
+            <select name="user-occupation"    id="user-occupation">
+              <option value="" disabled selected>Select option</option>
+              <option value="Student">Student</option>
+              <option value="Professional">Working Professional</option>
+              <option value="Entrepreneur">Entrepreneur</option>
+              <option value="Job Seeker">Job Seeker</option>
+              <option value="Career Changer">Career Changer</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="labels">
+          <label for="">Would you recomend Genesys Upskill to a friend?</label>
+  
+  
+          <div>
+            <input type="radio" id="yes" name="recomendation" value="yes">
+            <label class="radio-label" for="yes">Yes</label> 
+          </div>
+  
+          <div>
+            <input type="radio" id="no" name="recomendation" value="no">
+            <label class="radio-label" for="no">No</label> 
+          </div>
+  
+          <div>
+            <input type="radio" id="maybe" name="recomendation" value="maybe">
+            <label class="radio-label" for="maybe">Maybe</label>
+          </div>
+  
+        </div>
+  
+        <div class="labels">
+          <label for="">Languages and Frameworks known ( Check all that apply)</label>
+
+          <div>
+            <input type="checkbox" id="C" name="languages-and-frameworks">
+            <label class="checkbox-label" for="C">C</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="C++" name="languages-and-frameworks">
+            <label class="checkbox-label" for="C++">C++</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="C#" name="languages-and-frameworks">
+            <label class="checkbox-label" for="C#">C#</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="java" name="languages-and-frameworks">
+            <label class="checkbox-label" for="java">Java</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="python" name="languages-and-frameworks">
+            <label class="checkbox-label" for="python">Python</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="javascript" name="languages-and-frameworks">
+            <label class="checkbox-label" for="javascript">Javascript</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="react" name="languages-and-frameworks">
+            <label class="checkbox-label" for="react">React</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="angular" name="languages-and-frameworks">
+            <label class="checkbox-label" for="angular">Angular</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="django" name="languages-and-frameworks">
+            <label class="checkbox-label" for="django">Django</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" id="spring" name="languages-and-frameworks">
+            <label class="checkbox-label" for="spring">Spring</label>
+          </div>
+  
+        </div>
+  
+        <div class="labels">
+          <label for="comments">Any comments or Surgestions</label>
+           <br>
+  
+          <textarea name="" id="" cols="60" rows="7"></textarea>
+  
+        </div>
+
+        <button>submit</button>
+  
+       <div class="footer" >
+        <img src="/asset/SAENCRYSTAL_GLOBAL_LOGO.png" width="90px" alt="">
+        <p><small>image credit: Microsft Copilot.</small></p>
+        <p><small>Designed by: George Samuel Etim</small></p> 
+        <p>&copy; <small>2024 Saencrystal Global. All rights reserved</small>.</p>
+         
+
+       </div>
+    </form>
+  </div>
+  
+</body>
+</html>

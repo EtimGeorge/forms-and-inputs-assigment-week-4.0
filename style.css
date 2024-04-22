@@ -1,0 +1,217 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Your other CSS rules go below */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap'); */
+
+
+body {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  background-image: url(./asset/form\ image7.jpeg);
+ /* background-position: cover; */
+  background-size: cover;
+}
+
+.container {
+  max-width: 500px;
+  
+  margin: 20px auto; /* Centers the form horizontally */
+  padding: 20px;
+  background-color: rgba(248, 147, 46, 0.176);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(127, 255, 212, 0.26);
+}
+
+.labels {
+  margin-bottom: 15px;
+}
+
+/* label {
+  font-weight: bold;
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: auto #ff5100;
+}
+
+select,
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+}
+
+textarea {
+  resize: vertical; /* Allows vertical resizing */
+}
+
+
+/* Styling radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+/* Optional: Adjust the label's position for radio buttons and checkboxes */
+label.radio-label,
+label.checkbox-label {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f27e69; /* Tomato color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Hover effect transition */
+}
+
+button:hover {
+  background-color: #ff4500; /* Darker shade of tomato color on hover */
+}
+
+img {
+  border-radius: 50%;
+}
+
+.footer {
+  
+  font-weight: 100;
+  color: #000000;
+  margin-top: 5px;
+  padding: 0;
+  display: inline-flex;
+  justify-content:normal;
+  align-items: center;
+  height: 10vh; /* Ensures the image is centered vertically */
+}
+
+
+/* CSS for mobile and tablet screens */
+ @media screen and (max-width: 768px) {
+
+  body{
+    max-width: 100%;
+  }
+  
+  .footer { max-width: 100%; 
+    padding: 0;
+    
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%; /* Adjusts form width to fit smaller screens */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%; /* Makes form inputs full width on smaller screens */
+  }
+
+  select,
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 0; /* Removes margin between form elements on smaller screens */
+    margin-bottom: 10px; /* Adds vertical space between form elements */
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+
+body{
+ max-width: 100%;
+}
+
+.footer {max-width: 100%;
+
+}
+
+  .container {
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 14px;
+  }
+} 
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 1s ease-out;
+}
+
+
+
+
+/* Animations */
+/* @keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+
